@@ -1,1 +1,207 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+// @import '../node_modules/bootstrap/scss/bootstrap';
+
+
+// ======= Font ==========
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+
+// ======= Colors ==========
+$primary: #4555d2;
+$secondary: #cc2973;
+$dark: #191e47;
+$light: #f9fafe;
+$body-color: #494c52;
+$headings-color: $dark;
+
+// Navbar
+$navbar-nav-link-padding-x: 0.8rem;
+$navbar-padding-y: 1rem;
+$nav-link-font-weight: 700;
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+  8: $spacer * 12,
+) !default;
+
+
+$headings-margin-bottom: $spacer * 1 !default;
+$line-height-base: 1.7;
+$headings-font-weight: bold;
+
+// Buttons
+$button-radius: 50px;
+$button-padding-x: 30px;
+$button-padding-y: 10px;
+
+$btn-border-radius: $button-radius;
+$btn-border-radius-sm: $button-radius;
+$btn-border-radius-lg: $button-radius;
+$btn-padding-y: $button-padding-y;
+$btn-padding-y-lg: $button-padding-y;
+$btn-padding-y-sm: $button-padding-y;
+$btn-padding-x: $button-padding-x;
+$btn-padding-x-lg: $button-padding-x;
+$btn-padding-x-sm: $button-padding-x;
+$navbar-toggler-border-radius: 5px;
+
+// Inputs
+$input-radius: 30px;
+$input-btn-padding-y: 0.7rem;
+$input-btn-padding-x: 1rem;
+$input-border-radius: $input-radius;
+$input-border-radius-sm: $input-radius;
+$input-border-radius-lg: $input-radius;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+
+
+// ==================================================================================
+// ==================================================================================
+
+
+.xl-text {
+  font-size: 75px;
+}
+
+.btn-outline-secondary {
+  color: var(--bs-secondary);
+}
+
+.btn-outline-secondary {
+  &:hover {
+    color: #fff;
+  }
+}
+
+.header .decoration-star {
+  top: 80px;
+  left: -200px;
+  width: 500px;
+  opacity: 0.7;
+}
+
+.header .decoration-star-2 {
+  top: 80px;
+  right: -200px;
+  width: 500px;
+  opacity: 0.7;
+}
+
+.navbar {
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-sticky {
+  background: #fff;
+  opacity: 0.9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.details .decoration-star {
+  left: -200px;
+  width: 500px;
+}
+
+.details-2 .decoration-star {
+  right: -200px;
+  width: 500px;
+}
+
+.contact .decoration-star {
+  left: -300px;
+  width: 600px;
+}
+
+.to-top-btn {
+  position: fixed;
+  z-index: 20;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: #44434a;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.to-top-btn {
+  &:hover {
+    background-color: #1d1d21;
+  }
+}
+
+.to-top-btn {
+  img {
+    margin-bottom: 0.25rem;
+    width: 18px;
+  }
+}
+
+.show {
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .xl-text {
+    font-size: 50px;
+  }
+
+  .navbar {
+    .btn-outline-secondary {
+      margin-top: 20px;
+    }
+  }
+
+  .header {
+    margin-top: 0px !important;
+    text-align: center;
+  }
+
+  .header .decoration-star {
+    left: -100px;
+    width: 250px;
+  }
+
+  .header .decoration-star-2 {
+    right: -100px;
+    width: 250px;
+  }
+
+  .header .image-container {
+    margin-top: 30px;
+  }
+
+  .services .col-md-4 {
+    border-bottom: 1px #ccc solid;
+    margin: 10px 0;
+  }
+
+  .details-2 {
+    margin-top: 20px !important;
+  }
+
+  .details-2 .decoration-star {
+    top: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+
+}
+
+
