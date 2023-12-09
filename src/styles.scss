@@ -17,7 +17,7 @@ $headings-color: $dark;
 
 // Navbar
 $navbar-nav-link-padding-x: 0.8rem;
-$navbar-padding-y: 1rem;
+$navbar-padding-y: .5rem;
 $nav-link-font-weight: 700;
 
 $spacer: 1rem !default;
@@ -205,3 +205,35 @@ $input-border-radius-lg: $input-radius;
 }
 
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+
+
+// ===========================================
+
+
+.mdc-text-field {
+  background-color: transparent !important
+}
+::ng-deep .mdc-text-field--focused {
+  background-color: transparent !important
+}
+::ng-deep .mdc-text-field:hover {
+  background-color: transparent !important
+}
+::ng-deep .form-control:focus {
+  color: transparent !important
+}
+::ng-deep .mat-focused{
+  background-color: transparent !important;
+  // color:#cc2973
+}
+// .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick {
+//   color: #f44336;
+// }
+// mat-mdc-text-field-wrapper
+// .mat-mdc-form-field-infix 

@@ -10,48 +10,85 @@
       <div class="row">
         <div class="col-lg-6 d-none d-md-block">
           <div class="image-container">
-            <img src="images/contact.png" alt="" class="img-fluid" />
+            <img src="../../../assets/img/contact.png" alt="" class="img-fluid" />
           </div>
         </div>
         <div class="col-lg-6">
           <div class="text-container">
-            <h2>Contact Us For A Quote</h2>
+            <h2>Deja tu mensaje</h2>
 
-            <form>
-              <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter name"
-                />
+            <form method="post" id="myForm" name="myForm" [formGroup]="myForm" (ngSubmit)="enviar()">
+              <!-- <div class="row">
+                <div class="col-12">
+                  <mat-form-field class="d-block">
+                    <mat-label class="mat-label-form" >Nombre: </mat-label>
+                    <input  class="mt-2" matInput formControlName="from_name" name="from_name" type="text" placeholder="Introduzca su nombre"  >
+                  </mat-form-field>
+                </div>
+                <div class="col-12">
+                  <mat-form-field class="d-block">
+                    <mat-label class="mat-label-form" >Correo: </mat-label>
+                    <input class="mt-2" matInput formControlName="from_email" name="from_email" type="email" placeholder=""  >
+                  </mat-form-field>
+                </div>
+
+                <div class="col-12">
+                  <mat-form-field class="d-block">
+                    <mat-label class="mat-label-form"  >Como podemos ayudarte?</mat-label>
+                    <textarea  class="d-block mt-2" formControlName="message" name="message" matInput placeholder="Deje su mensaje..."></textarea>
+                  </mat-form-field>
+                </div>
+              </div> -->
+              <div class="col-12 mb-3">
+                 <mat-form-field  class="d-block" appearance="fill">
+                  <mat-label>Nombre:</mat-label>
+                   <input matInput 
+                   formControlName="from_name"
+                   name="from_name"
+                   type="text"
+                   />
+                  </mat-form-field>
               </div>
-              <div class="mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Enter email"
-                />
+              <div class="col-12 mb-3">
+                
+                 <mat-form-field  class="d-block" appearance="fill">
+                  <mat-label>Correo:</mat-label>
+                   <input matInput 
+                   formControlName="from_email"
+                   name="from_email"
+                   type="email"
+                   />
+                  </mat-form-field>
               </div>
-              <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter phone"
-                />
+              <div class="col-12 mb-3">
+                 <mat-form-field  class="d-block" appearance="fill">
+                  <mat-label>Numero de Telefono:</mat-label>
+                   <input matInput 
+                   formControlName="from_phone"
+                   name="from_phone"
+                   type="text"
+                   />
+                  </mat-form-field>
               </div>
-              <div class="mb-3">
-                <textarea
-                  class="form-control"
-                  placeholder="Enter message"
+              <div class="col-12 mb-3">
+                <mat-form-field  class="d-block" appearance="fill">
+                  <mat-label>Mensaje:</mat-label>
+                  <textarea matInput 
+                  formControlName="message"
+                  name="message"
                   rows="8"
-                ></textarea>
+                  ></textarea>
+                </mat-form-field>
               </div>
               <div class="d-grid gap-2">
-                <input
+                <!-- <input
                   type="submit"
                   value="Send"
                   class="btn btn-primary btn-block"
-                />
+                /> -->
+                <button type="button" class="btn btn-primary btn-block" (click)="enviar()">
+                  Enviar
+                </button>
               </div>
             </form>
           </div>
